@@ -173,7 +173,7 @@ fun ScoreDimensionItem(
             Spacer(
                 modifier = Modifier
                     .width((actualScore.toFloat() / maxValue * 100).dp)
-                    .height(100%)
+                    .height(10.dp)
                     .background(MaterialTheme.colorScheme.secondary, Shape = RoundedCornerShape(12.dp))
             )
             Text(

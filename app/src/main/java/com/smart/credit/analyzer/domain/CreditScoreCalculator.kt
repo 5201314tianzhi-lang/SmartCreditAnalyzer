@@ -3,6 +3,7 @@ package com.smart.credit.analyzer.domain
 import com.smart.credit.analyzer.data.model.*
 import java.time.Period
 import java.time.LocalDate
+import java.time.LocalDate
 
 /**
  * 信用评分计算器 - 使用加权评分模型
@@ -28,7 +29,7 @@ object CreditScoreCalculator {
         breakdown.creditMix = calculateCreditMixScore(report.creditAccounts)
 
         // 5. 新信贷申请 (10%)
-        breakDown.newCredits = calculateNewCreditScore(report.inquiries, report.publicRecords)
+        breakdown.newCredits = calculateNewCreditScore(report.inquiries, report.publicRecords)
 
         // 计算总分
         breakdown.totalScore = ((breakdown.paymentHistory * 0.35) +
