@@ -1,0 +1,30 @@
+# Built application outputs
+*.apk
+/app/build/
+/app/release/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/androidTest/**/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android Studio
+.DS_Store
+
+# Keystore files
+*.jks
+*.keystore
+
+# Android Profiling
+*.hprof

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础颜色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- 主色调 - 深蓝色专业金融色 -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_light">#2196F3</color>
+    <color name="primary_dark">#0D47A1</color>
+    
+    <!-- 辅助色 -->
+    <color name="secondary">#00897B</color>
+    <color name="secondary_light">#26A69A</color>
+    <color name="secondary_dark">#00695C</color>
+    
+    <!-- 错误色 -->
+    <color name="error">#D32F2F</color>
+    <color name="error_light">#EF5350</color>
+    <color name="error_dark">#B71C1C</color>
+    
+    <!-- 警告色 -->
+    <color name="warning">#F57C00</color>
+    <color name="warning_light">#FF9800</color>
+    <color name="warning_dark">#E65100</color>
+    
+    <!-- 成功色 -->
+    <color name="success">#388E3C</color>
+    <color name="success_light">#4CAF50</color>
+    <color name="dark_success_color">#1B5E20</color>
+    
+    <!-- 信息色 -->
+    <color name="info">#1976D2</color>
+    <color name="info_light">#2196F3</color>
+    
+    <!-- 背景色 -->
+    <color name="background_faint_background_color">#FAFAFA</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="surface_variant_color">#F5F5F5</color>
+    
+    <!-- 分隔线 -->
+    <color name="divider_color">#E0E0E0</color>
+    
+    <!-- 文本颜色 -->
+    <color name="on_primary_color">#FFFFFF</color>
+    <color name="on_secondary_color">#FFFFFF</color>
+    <color name="on_error_color">#FFFFFF</color>
+    <color name="on_warning_color">#FFFFFF</color>
+    <color name="on_surface_primary">#424242</color>
+    <color name="on_surface_secondary">#616161</color>
+    <color name="on_surface_tertiary">#757575</color>
+    <color name="on_surface_disabled_color">#BDBDBD</color>
+    
+    <!-- 信用评分颜色（从低到高） -->
+    <color name="score_critical">#D32F2F</color>      <!-- <400 分 -->
+    <color name="score_fair">#F57C00</color>          <!-- 400-599 分 -->
+    <color name="score_good">#388E3C</color>          <!-- 600-749 分 -->
+    <color name="score_excellent">#1565C0</color>     <!-- ≥750 分 -->
+    
+    <!-- 风险等级颜色 -->
+    <color name="risk_low_color">#388E3C</color>      <!-- 低风险 -->
+    <color name="risk_medium_color">#F57C00</color>   <!-- 中风险 -->
+    <color name="risk_high_color">#D32F2F</color>     <!-- 高风险 -->
+    
+    <!-- 卡片背景 -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_elevation_shadow_color">#E0E0E0</color>
+    
+    <!-- 进度条颜色 -->
+    <color name="progress_low_color">#F57C00</color>
+    <color name="progress_medium_color">#FFD54F</color>
+    <color name="progress_high_color">#388E3C</color>
+    
+    <!-- 深蓝主题专用色 -->
+    <color name="deep_blue">#0D47A1</color>
+    <color name="light_blue_depth">#BBDEFB</color>
+    <color name="blue_gradient_start">#1565C0</color>
+    <color name="blue_gradient_end">#0D47A1</color>
+</resources>

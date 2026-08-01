@@ -1,0 +1,37 @@
+{
+  "app_name": "征信报告分析软件SmartCreditAnalyzerApp",
+  "package_name": "com.operit.smartcreditanalyzerapp",
+  "project_dir": "/data/user/0/com.ai.assistance.operit/files/workspace/6f15452f-ff12-4185-91f9-5d1d8855d280/征信报告分析软件SmartCreditAnalyzerApp",
+  "requirement": "征信报告分析软件 SmartCredit Analyzer - 需要完善 ViewModel、Repository、AndroidManifest权限配置、strings.xml、colors.xml、build.gradle完整配置、添加PDF选择界面、数据加密机制、单元测试",
+  "created_at": "2026-07-31T08:04:23.281Z",
+  "architecture": "MVVM",
+  "min_sdk": 24,
+  "target_sdk": 34,
+  "language": "Kotlin",
+  "build_system": "Gradle",
+  "template": "internal",
+  "ui_framework": "Jetpack Compose",
+  "dependencies": [
+    "androidx.core:core-ktx:1.12.0",
+    "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
+    "androidx.activity:activity-compose:1.8.2",
+    "androidx.compose.ui:ui:1.6.0",
+    "androidx.compose.material3:material3:1.2.0"
+  ],
+  "ui_layout": {
+    "main_screen": "Scaffold with TopAppBar",
+    "navigation": "Single Activity",
+    "theme": "Material3 Dynamic Color"
+  },
+  "file_plan": [
+    "settings.gradle.kts",
+    "build.gradle.kts",
+    "app/build.gradle.kts",
+    "app/src/main/AndroidManifest.xml",
+    "app/src/main/java/com/operit/smartcreditanalyzerapp/MainActivity.kt",
+    "app/src/main/java/com/operit/smartcreditanalyzerapp/ui/theme/Theme.kt",
+    "app/src/main/java/com/operit/smartcreditanalyzerapp/ui/theme/Color.kt",
+    "app/src/main/res/values/strings.xml"
+  ],
+  "status": "planned"
+}

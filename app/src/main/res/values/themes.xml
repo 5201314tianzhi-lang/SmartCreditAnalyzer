@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmartCreditAnalyzer" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryDark">#0D47A1</item>
+        <item name="colorAccent">#1976D2</item>
+        <item name="colorError">#B00020</item>
+        <item name="android:windowBackground">#F5F5F5</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#546E7A</item>
+    </style>
+
+    <style name="Theme.SmartCreditAnalyzer.Transparent" parent="Theme.SmartCreditAnalyzer">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
