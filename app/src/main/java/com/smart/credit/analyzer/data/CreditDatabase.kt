@@ -17,7 +17,8 @@ import com.smart.credit.analyzer.data.entity.*
         PublicRecordEntity::class
     ],
     version = 3,
-    exportSchema = false
+    exportSchema = false,
+    typeConverters = [com.smart.credit.analyzer.data.entity.TypeConverters::class]
 )
 abstract class CreditDatabase : RoomDatabase() {
 

@@ -1,18 +1,24 @@
 #!/bin/bash
+set -e
+export ANDROID_HOME=/root/Android
 
-cd /data/user/0/com.ai.assistance.operit/files/workspace/6f15452f-ff12-4185-91f9-5d1d8855d280
+echo "=== Cleaning gradle caches ==="
+rm -rf ~/.gradle/caches/transforms-3
 
-# 替换所有aapt2为ARM64版本
-echo "正在替换aapt2..."
-find ~/.gradle/caches -name 'aapt2' -type f 2>/dev/null | while read f; do
-    cp /root/Android/build-tools/36.0.0/aapt2 "$f" 2>/dev/null
-    chmod +x "$f" 2>/dev/null
+echo "=== Running gradle build ==="
+./gradlew assembleDebug
+
+echo "=== Replacing aapt2 with ARM64 version ==="
+find ~/.gradle/caches/transforms-3 -name "aapt2-*" -type d 2>/dev/null | while read dir; do
+    aapt2_file="$dir/aapt2"
+    if [ -f "$aapt2_file" ]; then
+        current_arch=$(file "$aapt2_file" 2>/dev/null | grep -o "x86-64\|x86_64" | head -1)
+        if [ -n "$current_arch" ]; then
+            echo "Replacing x86_64 aapt2 in $dir"
+            cp /root/Android/build-tools/36.0.0/aapt2 "$aapt2_file"
+        fi
+    fi
 done
 
-# 设置环境变量
-export PATH="/data/user/0/com.ai.assistance.operit/files/workspace/6f15452f-ff12-4185-91f9-5d1d8855d280:$PATH"
-export ANDROID_AAPT2="/data/user/0/com.ai.assistance.operit/files/workspace/6f15452f-ff12-4185-91f9-5d1d8855d280/aapt2-wrapper.sh"
-
-# 构建
-echo "开始构建..."
-./gradlew assembleDebug --no-daemon
+echo "=== Build complete ==="
+ls -la app/build/outputs/apk/debug/*.apk 2>/dev/null || echo "APK not found"

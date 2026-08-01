@@ -132,4 +132,10 @@
     <string name="risk_color_average">风险橙色</string>
     <string name="risk_color_poor">风险红色</string>
     <string name="risk_color_v_poor">风险深红</string>
+    <string name="status_loading">加载中...</string>
+    <string name="title_new_report">新建报告</string>
+    <string name="title_scan_pdf">扫描PDF</string>
+    <string name="empty_state_title">暂无报告</string>
+    <string name="btn_choose_file">选择文件</string>
+    <string name="btn_cancel">取消</string>
 </resources>
