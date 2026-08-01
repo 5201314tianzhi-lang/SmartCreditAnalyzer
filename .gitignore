@@ -5,7 +5,6 @@
 
 # Gradle
 .gradle/
-build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/androidTest/**/build/
@@ -28,3 +27,26 @@ local.properties
 
 # Android Profiling
 *.hprof
+
+# Build tools (architecture-specific)
+bin/
+tools/
+aapt2-wrapper.sh
+replace_aapt2.sh
+build.sh
+inject_aapt2.groovy
+setup_android_env.sh
+
+# Operit workspace
+.operit/
+
+# Backup
+.backup/
+
+# Chinese project copies
+征信报告分析软件SmartCreditAnalyzerApp/
+智信分析征信报告智能分析系统App/
+
+# Plans and temp files
+*.json
+!README.md
