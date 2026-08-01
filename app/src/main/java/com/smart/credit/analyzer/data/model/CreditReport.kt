@@ -74,7 +74,7 @@ data class PublicRecord(
     val recordId: String,
     val recordType: String, // "欠税" / "法院判决" / "行政处罚" / "执行信息"
     val amount: Double,
-    val发生Date: LocalDate,
+    val occurrenceDate: LocalDate,
     val status: String // "未处理" / "已处理" / "已执行"
 )
 

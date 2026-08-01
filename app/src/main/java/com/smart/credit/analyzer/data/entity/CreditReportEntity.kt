@@ -79,6 +79,6 @@ data class PublicRecordEntity(
     val recordId: String,
     val recordType: String,
     val amount: Double,
-    val發生Date: LocalDate,
+    val occurrenceDate: LocalDate,
     val status: String
 )
